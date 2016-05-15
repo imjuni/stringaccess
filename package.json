@@ -1,0 +1,22 @@
+{
+  "name": "stringaccess",
+  "version": "0.0.2",
+  "description": "stringaccess ====",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imjuni/stringaccess.git"
+  },
+  "author": "ByungJoon Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/imjuni/stringaccess/issues"
+  },
+  "homepage": "https://github.com/imjuni/stringaccess#readme",
+  "devDependencies": {
+    "chai": "^3.5.0"
+  }
+}
