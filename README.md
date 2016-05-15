@@ -70,3 +70,5 @@ Unknown
 
 # Options
 * isCreate: Create object on blank path
+
+If you need more example, see test/sa.js.
