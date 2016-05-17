@@ -6,7 +6,7 @@ String Access is a import, export library using by dot-notation string. See belo
 # Exporter
 
 ```js
-var sa = require('stringaccess');
+var sa = require('stringaccess')();
 var superheros = {
   ironman: {
     name: 'Tony Stark',
@@ -34,7 +34,7 @@ Tony Stark
 # Importer
 
 ```js
-var sa = require('stringaccess');
+var sa = require('stringaccess')();
 var superheros = {
   ironman: {
     name: 'Tony Stark',
@@ -70,5 +70,6 @@ Unknown
 
 # Options
 * isCreate: Create object on blank path
+* isAssign: Path is point to object this time replace it. But isAssign is true, assign it. See test/sa.js in StringAccess_importer_object test.
 
 If you need more example, see test/sa.js.
