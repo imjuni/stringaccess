@@ -1,6 +1,6 @@
 {
   "name": "stringaccess",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Value in object set, get using by string that was created dot-notation",
   "main": "index.js",
   "scripts": {

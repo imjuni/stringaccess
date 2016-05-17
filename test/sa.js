@@ -99,14 +99,17 @@ describe('StringAccess', function () {
   });
 
   it('StringAccess_importer_object', function () {
-    var sa = require('../lib/StringAccess')({ isAssign: true });
+    var sa = require('../lib/StringAccess')({ isCreate: true, isAssign: true });
     var testObject = createObject();
 
     testObject = sa.importer(testObject, 'ironman.info', { company: 'Stark Industry' });
+    testObject = sa.importer(testObject, 'ironman.test', { company: 'Stark Industry' });
 
     testObject.ironman.info.age.should.equal(20);
     testObject.ironman.info.cell.should.equal('000-1111-2222');
     testObject.ironman.info.company.should.equal('Stark Industry');
+
+    testObject.ironman.test.company.should.equal('Stark Industry');
   });
 
   it('StringAccess_importer_invalid_path', function () {

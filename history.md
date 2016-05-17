@@ -24,3 +24,6 @@ npm run coverage
   * path point a object, replace it. But isAssign option set true, don't replace assign it. 
     See test/sa.js in StringAccess_importer_object test.
 * README.md fix
+
+# 0.0.7
+* Bug-fix o n isAssign option.
