@@ -12,3 +12,9 @@ npm test
 # Coverage
 npm run coverage
 ```
+
+# 0.0.5
+* Add feature, root path
+  * path value is '' or [], importer working to same Object.assign and exporter is return object
+* Replace Object.assign to lodash.cloneDeep
+  * Object.assign is shallow copy, so change deep copy
