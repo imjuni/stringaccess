@@ -103,6 +103,7 @@ describe('StringAccess', function () {
     var testObject = createObject();
 
     testObject = sa.importer(testObject, 'ironman.info', { company: 'Stark Industry' });
+    testObject = sa.importer(testObject, 'ironman.test', { company: 'tark Industry' });
     testObject = sa.importer(testObject, 'ironman.test', { company: 'Stark Industry' });
 
     testObject.ironman.info.age.should.equal(20);

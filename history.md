@@ -26,4 +26,45 @@ npm run coverage
 * README.md fix
 
 # 0.0.7
-* Bug-fix o n isAssign option.
+* Bug-fix on isAssign option.
+
+# 0.0.8
+* Bug-fix on isAssign option.
+  * change dependency module lodash.assign -> merge 
+
+```
+# Current action
+var assign = require('lodash.assign');
+var ironman = {
+  name: 'Tony Stark',
+  info: {
+    age: 20,
+    company: 'Stark Industry'
+  }
+}
+
+assign(ironman, { info: { tall: 183 } });
+console.log(ironman);
+
+> { name: 'Tony Stark', info: { tall: 183 } }
+
+
+# I want,
+var merge = require('merge');
+var ironman = {
+  name: 'Tony Stark',
+  info: {
+    age: 20,
+    company: 'tark Industry'
+  }
+}
+
+merge.recursive(false, ironman, { info: { tall: 183, company: 'Stark Industry' } });
+console.log(ironman);
+
+> { name: 'Tony Stark', info: { age: 20, company: 'Stark Industry', tall: 183 } }
+```
+
+* Because, StringAccess is component package for DivideConfig. DivideConfig need a 
+composition between development configuration and production configuration. If you
+don't want this feature (merge), the flag isAssign set to false.
